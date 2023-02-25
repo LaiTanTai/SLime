@@ -1,0 +1,118 @@
+@import "./Helpers/variables";
+@import "./Helpers/mixin";
+
+@import "./Based/customize";
+@import "./Based/reset";
+
+@import "./Component/button";
+@import "./Component/card";
+
+@import "./Layout/header";
+@import "./Layout/carousel";
+@import "./Layout/product";
+@import "./Layout/footer";
+
+.items{
+    padding-top: 50px;
+    text-align: center;
+
+    @include responsive("fluid"){
+        .item{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 10px;
+        }
+    }
+    @include responsive("lg"){
+        .item{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+        }
+    }
+    @include responsive("md"){
+        .item{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 10px;
+        }
+    }
+    @include responsive("sm"){
+        .item{
+            display: grid;
+            grid-template-columns: repeat(2,0.5fr);
+        }
+    }
+    .size{
+        padding: 10px 0px 10px 0px;
+        border : 1px solid $color-lime-light;
+        .text{
+            text-align: left;
+            padding-left: 10px;
+            line-height: 1px;
+            
+            .cart{
+                font-size: 12px;
+                background-color: $color-lime-dark;
+                border:1px solid transparent;
+                color: white;
+                height: 20px;
+                width: 60px;
+                border-radius: 10%;
+            }
+        }
+    }
+    & img {
+        width: 60%;
+        padding-bottom: 10px;
+        border-bottom:  1px solid $color-yellow-custard;
+        margin-bottom: 10px;
+    }
+}
+.remove{
+    width: 50px;
+    margin-top: 5px;
+    background-color: $color-yellow-custard;
+    border: 3px solid $color-lime;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 13px;
+
+}
+.table td, .table th{
+    width: 150px;
+}
+.pay{
+    width: 100px;
+    border-radius: 50px;
+    font-weight: 700;
+    border: 3px solid $color-lime;
+    background-color: $color-yellow-custard;
+    font-size: 13px;
+}
+.cartItem{
+    
+    img {
+        width: 50%;
+    }
+}
+.name{
+    font-size: 15px;
+}
+.type{
+    font-size: 10px;
+}
+.price{
+    font-size: 13px;
+    font-weight: 700;
+}
+.image{
+    width: 25%;
+}
+.subtract,.add{
+    background-color: $color-lime;
+    width: 15px;
+    font-size: 9px;
+    border-radius: 50%;
+    font-weight: 700;
+}

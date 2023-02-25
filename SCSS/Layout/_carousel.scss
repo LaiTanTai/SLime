@@ -1,0 +1,40 @@
+.carousel{
+    padding-top: 40px;
+    z-index: -1;
+    & .carousel-indicators{
+        & li {
+            background-color: $color-yellow-custard;
+        }
+    }
+    & .img{
+        width: 100%;
+    }
+    @include responsive("fluid"){
+        .carousel-item{
+            height: 450px;
+        }
+        & .img{
+            height: 450px;
+        }
+    }
+    @include responsive("xl"){
+        .carousel-item{
+            height: 350px;
+        }
+        & .img{
+            height: 350px;
+        }
+    }
+    
+    @include responsive("sm"){
+        & .img{
+            height: 200px;
+        }
+        .carousel-item{
+        
+            height: 200px;
+        }
+    }
+    
+    
+}

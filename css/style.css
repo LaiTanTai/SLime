@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+}
+.header > .navbar {
+  background-color: #98BA7D;
+}
+.header > .navbar .navbar-brand {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive;
+}
+.header > .navbar .navbar-toggler {
+  background-color: #D6EfC7;
+  border: 2px solid transparent;
+}
+.header > .navbar .navbar-toggler .navbar-toggler-icon {
+  width: 1em;
+}
+.header > .navbar .navbar-nav .nav-item > .nav-link {
+  cursor: pointer;
+  background-color: #98BA7D;
+  border: 1px solid transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+.header > .navbar .toggler .shopping {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.header > .navbar .toggler i {
+  color: white;
+  cursor: pointer;
+}
+.header > .navbar .toggler i::after {
+  content: "";
+}
+
+.carousel {
+  padding-top: 40px;
+  z-index: -1;
+}
+.carousel .carousel-indicators li {
+  background-color: #FBD686;
+}
+.carousel .img {
+  width: 100%;
+}
+@media screen and (max-width: 1400px) {
+  .carousel .carousel-item {
+    height: 450px;
+  }
+  .carousel .img {
+    height: 450px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .carousel .carousel-item {
+    height: 350px;
+  }
+  .carousel .img {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel .img {
+    height: 200px;
+  }
+  .carousel .carousel-item {
+    height: 200px;
+  }
+}
+
+.items {
+  padding-top: 50px;
+  text-align: center;
+}
+@media screen and (max-width: 1400px) {
+  .items .item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .items .item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .items .item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .items .item {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+}
+.items .size {
+  padding: 10px 0px 10px 0px;
+  border: 1px solid #D6EfC7;
+}
+.items .size .text {
+  text-align: left;
+  padding-left: 10px;
+  line-height: 1px;
+}
+.items .size .text .cart {
+  font-size: 12px;
+  background-color: #194E48;
+  border: 1px solid transparent;
+  color: white;
+  height: 20px;
+  width: 60px;
+  border-radius: 10%;
+}
+.items img {
+  width: 60%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #FBD686;
+  margin-bottom: 10px;
+}
+
+.remove {
+  width: 50px;
+  margin-top: 5px;
+  background-color: #FBD686;
+  border: 3px solid #98BA7D;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.table td, .table th {
+  width: 150px;
+}
+
+.pay {
+  width: 100px;
+  border-radius: 50px;
+  font-weight: 700;
+  border: 3px solid #98BA7D;
+  background-color: #FBD686;
+  font-size: 13px;
+}
+
+.cartItem img {
+  width: 50%;
+}
+
+.name {
+  font-size: 15px;
+}
+
+.type {
+  font-size: 10px;
+}
+
+.price {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.image {
+  width: 25%;
+}
+
+.subtract, .add {
+  background-color: #98BA7D;
+  width: 15px;
+  font-size: 9px;
+  border-radius: 50%;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

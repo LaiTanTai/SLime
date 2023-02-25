@@ -1,0 +1,38 @@
+
+.header{
+    position: fixed;
+    width: 100%;
+    &>.navbar{
+        background-color: $color-lime;
+        .navbar-brand {
+            @include Textstyle(white,40px,700);
+            font-family: 'Dancing Script', cursive;
+        }
+        .navbar-toggler{
+            background-color: $color-lime-light;
+            border : 2px solid transparent;
+            .navbar-toggler-icon{
+                width: 1em;
+            }
+        }
+        .navbar-nav .nav-item>.nav-link{
+            cursor: pointer;
+            background-color: $color-lime;
+            border : 1px solid transparent;
+            @include Textstyle(white,16px,400);
+        }
+        .toggler{
+            .shopping{
+                background-color: transparent;
+                border : 1px solid transparent;
+            }
+            i{
+                color: white;
+                cursor: pointer;
+            }
+            i::after{
+                content: "";
+            }
+        }
+    }
+}
