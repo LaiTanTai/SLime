@@ -1,0 +1,92 @@
+.footer_container {
+  margin-top: 10px;
+  width: 100%;
+  background-image: url(../../IMG/picshoes/1671068672_891_66-Background-Xanh-La-Nhung-Khong-Xa-Lanh-Sieu-Cute.jpg);
+  background-size: cover;
+}
+
+.footer_contact {
+  padding: 10px 0;
+  font-size: 0.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  margin: auto;
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .item-1 {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    display: block;
+    border-radius: 50px;
+  }
+  li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+}
+
+.copyright_content {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 75%;
+}
+.content_right {
+  display: flex;
+  a {
+    margin: 0 3px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 0.5rem;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.5s;
+    &:hover {
+      background-color: rgb(84, 216, 24);
+      transition: all 0.5s;
+    }
+  }
+}
+.content_left {
+  padding: 8px 0;
+  color: #fff;
+  font-size: 0.5rem;
+}
+.fa {
+  color: white;
+}
+
+@include reponsive("md") {
+  .footer__contact {
+    font-size: 1rem;
+    width: 70%;
+  }
+  .item-1 {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+  .copyright_content {
+    width: 45%;
+  }
+  .content_right a {
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    font-size: 1rem;
+  }
+  .content_left {
+    font-size: 1rem;
+  }
+}
