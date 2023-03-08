@@ -16,9 +16,13 @@
     padding-top: 50px;
     text-align: center;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 10px;
+    @include responsive("tv"){
+        .item{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 10px;
+        }
+    }
     @include responsive("fluid"){
         .item{
             display: grid;
