@@ -59,7 +59,7 @@ body {
 .carousel .img {
   width: 100%;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .carousel .carousel-item {
     height: 450px;
   }
